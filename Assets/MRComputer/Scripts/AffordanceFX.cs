@@ -1,12 +1,11 @@
-// Copyright (c) Meta Platforms, Inc. and affiliates.
-
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MRBike
+namespace MRComputer.Scripts
 {
     public class AffordanceFX : MonoBehaviour
     {
+
         private enum State
         {
             REST,
