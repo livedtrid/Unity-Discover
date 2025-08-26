@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MRComputer.Scripts
 {
-    public class BikeVisibleObject : NetworkBehaviour
+    public class ComputerVisibleObject : NetworkBehaviour
     {
         [SerializeField] private int m_partNum;
         [SerializeField] private GameObject m_visiblePart;
@@ -41,7 +41,7 @@ namespace MRComputer.Scripts
             OnVisibilityUpdate();
         }
 
-        public static void OnVisibilityChanged(Changed<BikeVisibleObject> changed)
+        public static void OnVisibilityChanged(Changed<ComputerVisibleObject> changed)
         {
             changed.Behaviour.OnVisibilityUpdate();
         }
@@ -57,7 +57,7 @@ namespace MRComputer.Scripts
             m_visiblePart.SetActive(IsVisible);
         }
 
-        public static void OnRotatorGrabbedChanged(Changed<BikeVisibleObject> changed)
+        public static void OnRotatorGrabbedChanged(Changed<ComputerVisibleObject> changed)
         {
             changed.Behaviour.OnRotatorGrabbedUpdated();
         }
@@ -85,7 +85,7 @@ namespace MRComputer.Scripts
             }
         }
 
-        public static void OnAffordanceChanged(Changed<BikeVisibleObject> changed)
+        public static void OnAffordanceChanged(Changed<ComputerVisibleObject> changed)
         {
             changed.Behaviour.OnAffordanceUpdate();
         }
@@ -222,7 +222,7 @@ namespace MRComputer.Scripts
 
             Debug.Assert(
                 m_visibilityManager != null,
-                $"{nameof(BikeVisibleObject)} No {nameof(BikeObjectVisibilityManager)} found for {name}");
+                $"{nameof(ComputerVisibleObject)} No {nameof(BikeObjectVisibilityManager)} found for {name}");
             m_visibilityManager.RegisterVisibleObject(this, m_partNum);
         }
 
@@ -230,7 +230,7 @@ namespace MRComputer.Scripts
         {
             if (m_toggleSelfObject)
             {
-                var allBikeVis = GetComponentsInChildren<BikeVisibleObject>();
+                var allBikeVis = GetComponentsInChildren<ComputerVisibleObject>();
                 if (allBikeVis.Length > 1)
                 {
                     Debug.LogError(

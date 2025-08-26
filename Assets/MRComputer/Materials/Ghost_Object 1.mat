@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: courseMarker
+  m_Name: Ghost_Object 1
   m_Shader: {fileID: 4800000, guid: 4afb306fea2220f4ea8a024fbd7a9178, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DIFFUSE_OREN
+  - _DIFFUSE_LAMBERT
   - _SPECULAR_BLINNPHONG
   m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
@@ -58,6 +58,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FingerGlowMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _IBLTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -86,6 +90,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -111,36 +119,43 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Diffuse: 1
-    - _DiffuseRoughness: 1.48
+    - _Diffuse: 0
+    - _DiffuseRoughness: 0.28
     - _DstBlend: 10
     - _DstBlendAlpha: 10
+    - _EnableConfidence: 0
     - _EnvironmentReflections: 1
-    - _Eta: 1.61
+    - _Eta: 1.39
     - _Exposure: 1
+    - _FresnelPower: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _IBL: 0
+    - _IndexGlowValue: 0
     - _Kaffordance: 0
-    - _Kd: 0.278
-    - _Kf: 0.92
+    - _Kd: 0.651
+    - _Kf: 0.373
     - _Kr: 0
-    - _Ks: 0
+    - _Ks: 0.168
     - _Metallic: 0
-    - _Metalness: 0.66
+    - _Metalness: 0
+    - _MiddleGlowValue: 0
     - _MikktNormals: 0
     - _Mode: 3
     - _NormalBlend: 1
     - _OcclusionStrength: 1
-    - _Opacity: 0.39
-    - _OrthoRoughness: 0
-    - _OutlineWidth: 0.29
+    - _Opacity: 0.17
+    - _OrthoRoughness: 0.054
+    - _OutlineOpacity: 0.251
+    - _OutlineWidth: 0
     - _Parallax: 0.02
+    - _PinkyGlowValue: 0
     - _PreMult: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Roughness: 0
+    - _RingGlowValue: 0
+    - _Roughness: 0.1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular: 0
@@ -149,18 +164,25 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 1
+    - _ThumbGlowValue: 0
     - _UVSec: 0
     - _UseOcclusionMap: 0
     - _WorkflowMode: 1
+    - _WristFade: 1
     - _ZWrite: 0
     m_Colors:
     - _AffordanceColor: {r: 1, g: 0, b: 0, a: 1}
-    - _AlbedoTint: {r: 0.021787085, g: 0.79711074, b: 0.9622642, a: 1}
+    - _AlbedoTint: {r: 0.01176471, g: 0.90588236, b: 0.1714075, a: 1}
     - _BaseColor: {r: 0.19215679, g: 0.57243973, b: 0.90588236, a: 0.18431373}
-    - _Color: {r: 0.35635453, g: 0.36252096, b: 0.3679245, a: 0.18431373}
-    - _EmissionColor: {r: 0.019607842, g: 0.13304554, b: 0.8392157, a: 1}
+    - _Color: {r: 0.10798612, g: 0.9811321, b: 0.32422397, a: 0.18431373}
+    - _ColorBottom: {r: 0.075898856, g: 0.20716037, b: 0.49056602, a: 0.30588236}
+    - _ColorTop: {r: 0.15432535, g: 0.47810608, b: 0.8018868, a: 1}
+    - _EmissionColor: {r: 0.019607842, g: 0.8392157, b: 0.13445035, a: 1}
+    - _FingerGlowColor: {r: 0.85882354, g: 0.8774578, b: 0.9137255, a: 0.5764706}
+    - _OutlineColor: {r: 0.53773576, g: 0.53773576, b: 0.53773576, a: 1}
+    - _OutlineJointColor: {r: 1, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularTint: {r: 0.26269132, g: 0.3264478, b: 0.8867924, a: 1}
+    - _SpecularTint: {r: 0.25119257, g: 0.8201326, b: 0.9056604, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7376260937565614413
 MonoBehaviour:

@@ -7,9 +7,9 @@ namespace MRComputer.Scripts
 {
     public class BikeObjectVisibilityManager : MonoBehaviour
     {
-        private Dictionary<int, BikeVisibleObject> m_bikeParts = new();
+        private Dictionary<int, ComputerVisibleObject> m_bikeParts = new();
 
-        public void RegisterVisibleObject(BikeVisibleObject visibleObject, int partNum)
+        public void RegisterVisibleObject(ComputerVisibleObject visibleObject, int partNum)
         {
             try
             {

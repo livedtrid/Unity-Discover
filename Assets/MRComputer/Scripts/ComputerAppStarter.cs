@@ -6,9 +6,9 @@ namespace MRComputer.Scripts
 {
     public class ComputerAppStarter : MonoBehaviour
     {
-        [SerializeField] private MRBike.VONetworkPlayer m_voPlayer;
+        [SerializeField] private VONetworkPlayer m_voPlayer;
 
-        [SerializeField] private MRBike.TaskHandler m_taskHandler;
+        [SerializeField] private TaskHandler m_taskHandler;
 
         [SerializeField] private float m_delay = 10;
 
