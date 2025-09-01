@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MRComputer.Scripts
 {
-    public class VONetworkManager : MonoBehaviour
+    public class VONetworkManager : NetworkBehaviour
     {
         [SerializeField] private TaskVOPlayer m_taskVoPlayer;
         [SerializeField] private bool m_debug = false;

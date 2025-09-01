@@ -20,7 +20,7 @@ namespace MRComputer.Scripts
         [SerializeField] private ColorIndicator m_colorIndicator;
 
         [AutoSetFromParent]
-        [SerializeField] private BikeObjectVisibilityManager m_visibilityManager;
+        [SerializeField] private ComputerObjectVisibilityManager m_visibilityManager;
 
         [Networked(OnChanged = nameof(OnVisibilityChanged))]
         private bool IsVisible { get; set; }
@@ -217,12 +217,12 @@ namespace MRComputer.Scripts
         {
             if (m_visibilityManager == null)
             {
-                m_visibilityManager = GetComponentInParent<BikeObjectVisibilityManager>();
+                m_visibilityManager = GetComponentInParent<ComputerObjectVisibilityManager>();
             }
 
             Debug.Assert(
                 m_visibilityManager != null,
-                $"{nameof(ComputerVisibleObject)} No {nameof(BikeObjectVisibilityManager)} found for {name}");
+                $"{nameof(ComputerVisibleObject)} No {nameof(ComputerObjectVisibilityManager)} found for {name}");
             m_visibilityManager.RegisterVisibleObject(this, m_partNum);
         }
 

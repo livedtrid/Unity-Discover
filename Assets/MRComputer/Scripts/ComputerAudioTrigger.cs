@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 namespace MRComputer.Scripts
 {
     [RequireComponent(typeof(AudioSource))]
-    public class BikeAudioTrigger : MonoBehaviour
+    public class ComputerAudioTrigger : MonoBehaviour
     {
         [System.Serializable]
         public struct MinMaxPair

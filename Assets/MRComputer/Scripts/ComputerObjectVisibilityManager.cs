@@ -5,15 +5,15 @@ using UnityEngine;
 
 namespace MRComputer.Scripts
 {
-    public class BikeObjectVisibilityManager : MonoBehaviour
+    public class ComputerObjectVisibilityManager : MonoBehaviour
     {
-        private Dictionary<int, ComputerVisibleObject> m_bikeParts = new();
+        private Dictionary<int, ComputerVisibleObject> m_computerParts = new();
 
         public void RegisterVisibleObject(ComputerVisibleObject visibleObject, int partNum)
         {
             try
             {
-                m_bikeParts.Add(partNum, visibleObject);
+                m_computerParts.Add(partNum, visibleObject);
             }
             catch
             {
@@ -24,57 +24,57 @@ namespace MRComputer.Scripts
 
         public void HideNetworkObject(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.Hide();
+                computerPart.Hide();
             }
         }
 
         public void ShowNetworkObject(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.Show();
+                computerPart.Show();
             }
         }
 
         public void RotatorGrabNetworkObject(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.RotatorGrab();
+                computerPart.RotatorGrab();
             }
         }
 
         public void RotatorReleaseNetworkObject(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.RotatorRelease();
+                computerPart.RotatorRelease();
             }
         }
 
         public void SendNetworkTrigger(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.Trigger();
+                computerPart.Trigger();
             }
         }
 
         public void AffordanceActivate(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.AffordanceActivate();
+                computerPart.AffordanceActivate();
             }
         }
 
         public void AffordanceDeactivate(int partNum)
         {
-            if (m_bikeParts.TryGetValue(partNum, out var bikePart))
+            if (m_computerParts.TryGetValue(partNum, out var computerPart))
             {
-                bikePart.AffordanceDeactivate();
+                computerPart.AffordanceDeactivate();
             }
         }
     }

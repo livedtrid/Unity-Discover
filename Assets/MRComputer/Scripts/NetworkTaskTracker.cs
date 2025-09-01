@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MRComputer.Scripts
 {
-    public class NetworkTaskTracker : MonoBehaviour
+    public class NetworkTaskTracker : NetworkBehaviour
     {
         [SerializeField] private CourseTracker m_courseTracker;
         [SerializeField] private bool m_debug = false;
