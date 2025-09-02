@@ -17,7 +17,7 @@ namespace MRComputer.Scripts
             }
             catch
             {
-                Debug.Log($"[Bike] -- REGISTRATION FAILED -- {visibleObject.name} | part: {partNum}");
+                Debug.Log($"[Computer] -- REGISTRATION FAILED -- {visibleObject.name} | part: {partNum}");
             }
         }
 

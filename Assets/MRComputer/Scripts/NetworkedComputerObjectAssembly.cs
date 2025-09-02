@@ -1,6 +1,5 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
-using MRBike;
 using Oculus.Interaction;
 using UnityEngine;
 
@@ -10,12 +9,12 @@ namespace MRComputer.Scripts
     /// Assembles the parts with their targets and origin.
     /// Logic to trigger the vo when piece hits the target
     /// </summary>
-    public class NetworkedBikeObjectAssembly : MonoBehaviour
+    public class NetworkedComputerObjectAssembly : MonoBehaviour
     {
         [SerializeField] private GameObject m_spawnedNetworkObject = null;
         [SerializeField] private TransformTarget m_target;
         [SerializeField] private GameObject m_origin;
-        [SerializeField] private MRBike.TaskVOPlayer m_voPlayer;
+        [SerializeField] private TaskVOPlayer m_voPlayer;
         [SerializeField] private int m_voClipNum;
 
         private bool m_inFinishedState = false;
@@ -52,7 +51,7 @@ namespace MRComputer.Scripts
                 m_target.gameObject.SetActive(false);
         }
 
-        public void CompletedBikeState(string state)
+        public void CompletedComputerState(string state)
         {
             if (!m_inFinishedState)
             {

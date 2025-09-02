@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace MRComputer.Scripts
 {
@@ -8,7 +9,7 @@ namespace MRComputer.Scripts
     {
         [SerializeField] private GameObject m_rightHandObject;
         [SerializeField] private GameObject m_leftHandObject;
-        [SerializeField] private MRBike.BikeVisibleObject m_bikeVisibleObject;
+        [FormerlySerializedAs("m_bikeVisibleObject")] [SerializeField] private ComputerVisibleObject m_computerVisibleObject;
 
         private bool m_currentHandednessIsRight = true;
 
@@ -31,7 +32,7 @@ namespace MRComputer.Scripts
             if (!m_currentHandednessIsRight)
             {
                 m_currentHandednessIsRight = true;
-                m_bikeVisibleObject.Trigger();
+                m_computerVisibleObject.Trigger();
             }
         }
 
@@ -40,7 +41,7 @@ namespace MRComputer.Scripts
             if (m_currentHandednessIsRight)
             {
                 m_currentHandednessIsRight = false;
-                m_bikeVisibleObject.Trigger();
+                m_computerVisibleObject.Trigger();
             }
         }
     }

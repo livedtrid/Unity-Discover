@@ -1,6 +1,5 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
-using MRBike;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;

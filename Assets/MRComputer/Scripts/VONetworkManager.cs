@@ -13,7 +13,7 @@ namespace MRComputer.Scripts
             OnPlayVoiceOverRPC(clipNum);
 
             if (m_debug)
-                Debug.Log($"[bike] -- VO RPC sent :: Task number {clipNum}");
+                Debug.Log($"[computer] -- VO RPC sent :: Task number {clipNum}");
         }
 
         [Rpc(RpcSources.All, RpcTargets.All)]

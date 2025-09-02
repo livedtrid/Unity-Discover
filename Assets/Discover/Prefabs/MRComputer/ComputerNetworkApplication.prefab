@@ -3217,7 +3217,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_volume: 1
-  m_clips: []
+  m_clips:
+  - {fileID: 8300000, guid: 18470d0bca94a4c4f90c452c08ec74cc, type: 3}
+  - {fileID: 8300000, guid: 39ac09c289826234f97cf760e9f14b52, type: 3}
+  - {fileID: 8300000, guid: 371e42f8893551a4594334bf698ba441, type: 3}
+  - {fileID: 8300000, guid: ee8cb7929137f21439d25717b5951f2a, type: 3}
+  - {fileID: 8300000, guid: 07eac42dca3c9b14b90c35b6733a9bea, type: 3}
+  - {fileID: 8300000, guid: 1742b26ab08cf454bb0442fd9de71833, type: 3}
+  - {fileID: 8300000, guid: 195538a987217a642928f55853970d5b, type: 3}
+  - {fileID: 8300000, guid: c8e4e990338a7fb4dbdb0f6846679b17, type: 3}
+  - {fileID: 8300000, guid: d9e839770fa977c4e96d4f548af04ccd, type: 3}
+  - {fileID: 8300000, guid: 48e44b86969b4044f9bca64360203986, type: 3}
+  - {fileID: 8300000, guid: 24ef438f5bbb19446a92ab4006b801f3, type: 3}
+  - {fileID: 8300000, guid: 68a30ed0bce0a1949ac103260fc02dfe, type: 3}
+  - {fileID: 8300000, guid: 4692fdc424387ef4da363ce3ce6aa182, type: 3}
+  - {fileID: 8300000, guid: 3f47f72ca65bc5748840d321ad6c40fd, type: 3}
+  - {fileID: 8300000, guid: 95bfd504f6940794f9fded0e514c5cc5, type: 3}
   m_audioSource: {fileID: 5121527594495915306}
   m_finalClip: {fileID: 8300000, guid: 95bfd504f6940794f9fded0e514c5cc5, type: 3}
   m_finalClipDelay: 2
@@ -18735,7 +18750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2103f6fc411ae7844aef7232fb2e4f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_grabbedObject: {fileID: 0}
+  m_grabbedObject: {fileID: 8063704949435737512}
   m_thresholdDistance: 0.1
   m_thresholdAngle: 180
   m_offset: 0
@@ -18743,7 +18758,19 @@ MonoBehaviour:
   m_debugText: {fileID: 5803880341792751897}
   OnComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4772048141997160335}
+        m_TargetAssemblyTypeName: MRComputer.Scripts.ComputerVisibleObject, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6257963463974176421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26102,11 +26129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41fa1ddfdaa5c454ca9355e6c449a942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnedNetworkObject: {fileID: 0}
-  m_target: {fileID: 0}
-  m_origin: {fileID: 0}
-  m_voPlayer: {fileID: 0}
-  m_voClipNum: 0
+  m_spawnedNetworkObject: {fileID: 8063704949435737512}
+  m_target: {fileID: 4089730556358366600}
+  m_origin: {fileID: 7219513819335489214}
+  m_voPlayer: {fileID: 427638927204710873}
+  m_voClipNum: 3
 --- !u!1 &2501167319010651252
 GameObject:
   m_ObjectHideFlags: 0
@@ -96766,7 +96793,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2507528872485292675, guid: 2e02ced8b16a9304b91e9e58abfec984, type: 3}
   m_PrefabInstance: {fileID: 25270584111412135}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8063704949435737512}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
@@ -96775,6 +96802,11 @@ MonoBehaviour:
 --- !u!4 &5530992874263006117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5520234194641614850, guid: 2e02ced8b16a9304b91e9e58abfec984, type: 3}
+  m_PrefabInstance: {fileID: 25270584111412135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8063704949435737512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8048442276962571791, guid: 2e02ced8b16a9304b91e9e58abfec984, type: 3}
   m_PrefabInstance: {fileID: 25270584111412135}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1791288870488413325

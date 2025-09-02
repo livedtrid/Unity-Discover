@@ -230,12 +230,12 @@ namespace MRComputer.Scripts
         {
             if (m_toggleSelfObject)
             {
-                var allBikeVis = GetComponentsInChildren<ComputerVisibleObject>();
-                if (allBikeVis.Length > 1)
+                var allComputerVis = GetComponentsInChildren<ComputerVisibleObject>();
+                if (allComputerVis.Length > 1)
                 {
                     Debug.LogError(
                         $"{name} can't toggle self visibility because it" +
-                        $" has another BikeVisibleObject as a child");
+                        $" has another ComputerVisibleObject as a child");
                 }
             }
         }

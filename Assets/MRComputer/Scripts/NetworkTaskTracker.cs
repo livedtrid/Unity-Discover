@@ -12,7 +12,7 @@ namespace MRComputer.Scripts
         {
             OnTaskCompletedRPC(taskNum);
             if (m_debug)
-                Debug.Log("[bike] -- task RPC sent :: Task number " + taskNum.ToString());
+                Debug.Log("[computer] -- task RPC sent :: Task number " + taskNum.ToString());
         }
 
         [Rpc(RpcSources.All, RpcTargets.All)]
@@ -20,7 +20,7 @@ namespace MRComputer.Scripts
         {
             if (m_debug)
             {
-                Debug.Log("[bike] RPC received:: Task number " + taskNum.ToString());
+                Debug.Log("[computer] RPC received:: Task number " + taskNum.ToString());
             }
 
             if (!m_courseTracker)

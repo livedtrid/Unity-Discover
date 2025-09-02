@@ -15255,7 +15255,7 @@ MonoBehaviour:
   m_onColor: {r: 0, g: 0.4, b: 1, a: 1}
   m_offColor: {r: 0.90588236, g: 0.42352942, b: 0.07058824, a: 1}
   m_renderers: []
-  m_throbSpeed: 1
+  m_throbSpeed: 10
 --- !u!114 &2507528872485292675
 MonoBehaviour:
   m_ObjectHideFlags: 0

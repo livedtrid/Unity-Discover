@@ -55,9 +55,9 @@ namespace MRComputer.Scripts
             if (m_removeGrabbableOnComplete && m_grabbedObject)
             {
                 m_grabbedObject.SetActive(false);
-                if (m_grabbedObject.TryGetComponent<MRBike.BikeVisibleObject>(out var bikeObj))
+                if (m_grabbedObject.TryGetComponent<ComputerVisibleObject>(out var computerObj))
                 {
-                    bikeObj.Hide();
+                    computerObj.Hide();
                 }
             }
 

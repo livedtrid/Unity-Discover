@@ -11,7 +11,7 @@ namespace MRComputer.Scripts
     public class SeatAdjustementUpdater : MonoBehaviour
     {
         [SerializeField] private TMP_Text m_valueLabel;
-        [SerializeField] private MRBike.FiducialCtrl m_fiducialCtrl;
+        [SerializeField] private FiducialCtrl m_fiducialCtrl;
         [SerializeField] private GameObject m_movingObject;
         [SerializeField] private float m_baseDistance = 0.7f;
         [SerializeField] private float m_coef = 100;

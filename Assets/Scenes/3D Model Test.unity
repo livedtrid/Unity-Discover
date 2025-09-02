@@ -638,37 +638,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8f98da64f5400a94487aaf9ec77afddc, type: 3}
---- !u!1 &1336909374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1336909375}
-  m_Layer: 0
-  m_Name: computer_icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1336909375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336909374}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3666318353933784537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,11 +652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2055726499247072871, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -3296533565786209722
+      value: -1350963314862650354
       objectReference: {fileID: 0}
     - target: {fileID: 2055726499247072871, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: 195651699437315512
+      value: -1898218640642227327
       objectReference: {fileID: 0}
     - target: {fileID: 2491985169569790244, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: Flags
@@ -695,11 +664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2491985169569790244, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -4160829108991065014
+      value: -2141865876846638147
       objectReference: {fileID: 0}
     - target: {fileID: 2491985169569790244, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: 5597586507253519039
+      value: 3072915144928244615
       objectReference: {fileID: 0}
     - target: {fileID: 3891287076461126398, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: m_LocalPosition.x
@@ -751,11 +720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8545954073197182298, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
-      value: -4807823104708940238
+      value: -413438104892526518
       objectReference: {fileID: 0}
     - target: {fileID: 8545954073197182298, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
-      value: -1373204703296899699
+      value: 7197738240565600678
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -774,4 +743,3 @@ SceneRoots:
   - {fileID: 1160234427}
   - {fileID: 1248873633}
   - {fileID: 3666318353933784537}
-  - {fileID: 1336909375}
