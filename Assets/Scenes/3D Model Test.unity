@@ -681,6 +681,18 @@ PrefabInstance:
       propertyPath: _handAligment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 399847605009283101, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
+      propertyPath: Flags
+      value: 2561
+      objectReference: {fileID: 0}
+    - target: {fileID: 399847605009283101, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[0]
+      value: 2252150577911896244
+      objectReference: {fileID: 0}
+    - target: {fileID: 399847605009283101, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
+      propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
+      value: 6308407785924850824
+      objectReference: {fileID: 0}
     - target: {fileID: 2055726499247072871, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: Flags
       value: 2561
@@ -704,6 +716,10 @@ PrefabInstance:
     - target: {fileID: 2491985169569790244, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: NetworkGuid.RawGuidValue.Array.data[1]
       value: 3072915144928244615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494849816962512993, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
+      propertyPath: m_partNum
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3891287076461126398, guid: 73878c6b57522414a8649ad204c5c192, type: 3}
       propertyPath: m_LocalPosition.x
